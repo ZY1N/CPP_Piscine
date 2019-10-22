@@ -12,7 +12,7 @@
 
 CC = clang++
 
-make: phonebook.cpp
+make: phonebook.cpp phonebook.hpp
 	$(CC) -o phonebook phonebook.cpp
 
 clean:
