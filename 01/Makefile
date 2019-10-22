@@ -12,8 +12,8 @@
 
 CC = clang++
 
-make : phonebook.cpp
-	$(cc) -o phonebook phonebook.cpp
+make: phonebook.cpp
+	$(CC) -o phonebook phonebook.cpp
 
-clean :
+clean:
 	$(RM) $ phonebook

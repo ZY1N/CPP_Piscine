@@ -12,7 +12,7 @@
 
 CC = clang++
 
-make : megaphone.cpp
+make: megaphone.cpp
 	$(CC) -o megaphone megaphone.cpp 
 
 clean:
