@@ -19,9 +19,9 @@ class HumanA
 {
     public:
         HumanA(std::string name, Weapon& x);
-        std::string name;
         void attack();
     private:
+        std::string name;
         Weapon &humanAWeapon;
     protected:
 };

@@ -21,11 +21,11 @@ class HumanB
 {
     public:
        HumanB(std::string name);
-       Weapon *humanBWeapon;
-       std::string name;
        void attack();
        void setWeapon(Weapon &x);
     private:
+        std::string name;
+        Weapon *humanBWeapon;
     protected:
 };
 

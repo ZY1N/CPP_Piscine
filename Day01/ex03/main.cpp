@@ -15,8 +15,10 @@
 
 int main()
 {
-    ZombieHorde firstwave = ZombieHorde(20);
-    ZombieHorde secondwave = ZombieHorde(100);
+    ZombieHorde firstwave = ZombieHorde(2);
+    ZombieHorde secondwave = ZombieHorde(5);
+    std::cout << "first wave!" << std::endl << std::endl;
     firstwave.announce();
+    std::cout << std::endl << "second wave!" << std::endl << std::endl;
     secondwave.announce();
 }

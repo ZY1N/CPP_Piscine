@@ -19,18 +19,18 @@ void    ponyOnTheHeap()
 
     heapPony = new Pony();
 
-    heapPony->name = "Jake";
-    heapPony->color = "Chestnut";
-    heapPony->gender = "Unknown";
-    heapPony->jumpheight = 5;
-    heapPony->alivestatus = 1;
+    heapPony->setname("Jake");
+    heapPony->setcolor("Chestnut");
+    heapPony->setgender("Jake");
+    heapPony->setjumpheight(5);
+    heapPony->setalivestatus(1);
 
-    std::cout << heapPony->name << "is a " 
-    << heapPony->color << " pony of " << heapPony->gender
+    std::cout << heapPony->getname() << "is a " 
+    << heapPony->getcolor() << " pony of " << heapPony->getgender()
     << " gender " << " he can jump "
-    << heapPony->jumpheight << " feet ";
+    << heapPony->getjumpheight() << " feet ";
 
-    if (heapPony->alivestatus == 1)
+    if (heapPony->getalivestatus() == 1)
         std::cout << "and he is alive.";
     else
         std::cout << "and he isn't alive.";
@@ -43,18 +43,18 @@ void    ponyOnTheStack()
 {
     Pony stackPony;
 
-    stackPony.name = "Spiderman";
-    stackPony.color = "Pink";
-    stackPony.gender = "Spider";
-    stackPony.jumpheight = 100;
-    stackPony.alivestatus = 0;
+    stackPony.setname("Spiderman");
+    stackPony.setcolor("Pink");
+    stackPony.setgender("Spider");
+    stackPony.setjumpheight(100);
+    stackPony.setalivestatus(0);
 
-    std::cout << stackPony.name << " is a " 
-    << stackPony.color << " pony of " << stackPony.gender
+    std::cout << stackPony.getname() << " is a " 
+    << stackPony.getcolor() << " pony of " << stackPony.getgender()
     << " gender " << " he can jump "
-    << stackPony.jumpheight << " feet ";
+    << stackPony.getjumpheight() << " feet ";
 
-    if (stackPony.alivestatus == 1)
+    if (stackPony.getalivestatus() == 1)
         std::cout << "and he is alive.";
     else
         std::cout << "and he isn't alive.";

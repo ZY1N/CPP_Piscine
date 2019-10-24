@@ -18,13 +18,23 @@
 class Pony
 {
     public:
-        std::string name;
-        std::string color;
-        std::string gender;
-        int         jumpheight;
-        bool         alivestatus;
-        void    saybye();
+        void            saybye();
+        void            setname(std::string s);
+        std::string     getname();
+        void            setcolor(std::string s);
+        std::string     getcolor();
+        void            setgender(std::string s);
+        std::string     getgender();
+        void            setjumpheight(int i);
+        int             getjumpheight();
+        void            setalivestatus(bool b);
+        bool            getalivestatus();
     private:
+        std::string     name;
+        std::string     color;
+        std::string     gender;
+        int             jumpheight;
+        bool            alivestatus;
     protected:
 };
 

@@ -18,3 +18,48 @@ void    Pony::saybye()
 {
     std::cout << " " << name << " has died" << std::endl;
 }
+
+void    Pony::setname(std::string s)
+{
+    name = s;
+}
+std::string    Pony::getname()
+{
+    return(this->name);
+}
+
+void    Pony::setcolor(std::string s)
+{
+    color = s;
+}
+std::string    Pony::getcolor()
+{
+    return(this->name);
+}
+
+void    Pony::setgender(std::string s)
+{
+    gender = s;
+}
+std::string    Pony::getgender()
+{
+    return(this->gender);
+}
+
+void    Pony::setjumpheight(int i)
+{
+    jumpheight = i;
+}
+int    Pony::getjumpheight()
+{
+    return(this->jumpheight);
+}
+
+void    Pony::setalivestatus(bool b)
+{
+    alivestatus = b;
+}
+bool    Pony::getalivestatus()
+{
+    return(this->alivestatus);
+}

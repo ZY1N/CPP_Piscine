@@ -20,6 +20,7 @@ class Zombie
         void announce();
         void setType(std::string str);
         void setName(std::string str);
+    private:
         std::string type;
         std::string name;
 };

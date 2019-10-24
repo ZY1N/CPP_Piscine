@@ -23,8 +23,8 @@ Zombie* ZombieEvent::newZombie(std::string name)
 {
     Zombie *newZombie = new Zombie();
 
-    newZombie->type = this->type;
-    newZombie->name = name;
+    newZombie->settype(this->type);
+    newZombie->setname(name);
     return(newZombie);
 }
 
@@ -39,8 +39,8 @@ Zombie* ZombieEvent::randomChump()
     std::string NameArray[10] = {"Mo", "Yi", "Jim", "Edgar", "Eric", "Steven",
     "Matt", "Hope", "Edward", "Cisco"};
     randomName = NameArray[(gmtm->tm_sec + rand()) % 10];
-    randomGuy->type = this->type;
-    randomGuy->name = randomName;
+    randomGuy->settype(this->type);
+    randomGuy->setname(randomName);
     return(randomGuy);
 }
 
